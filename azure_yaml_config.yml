@@ -4,13 +4,14 @@ trigger:
     - '*'
   paths:
     include:
-    - 'heartbeat base xlsx template_copy(2).xlsx'
+    - 'path/to/your/heartbeat_base_xlsx_template_copy_2.xlsx'
 
 jobs:
 - job: RunPythonScript
   pool:
     vmImage: 'ubuntu-latest'
   steps:
+  - checkout: self  # Add a checkout step to get the latest code
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '3.x'
@@ -18,5 +19,4 @@ jobs:
   - script: |
       pip install -r requirements.txt
       python main_run02.py
-
 
