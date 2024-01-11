@@ -4,7 +4,7 @@ trigger:
     - '*'
   paths:
     include:
-    - 'heartbeat_base_xlsx_template_copy_2.xlsx'
+    - 'heartbeat base xlsx template_copy(2).xlsx'
 
 jobs:
 - job: RunPythonScript
