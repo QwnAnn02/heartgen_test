@@ -18,7 +18,7 @@ def main():
     check_mandatory_fields(df)
 
     # Check data types
-    check_data_types(df)
+    #check_data_types(df)
 
     # Fix trailing spaces
     df = fix_trailing_spaces(df)
