@@ -1,6 +1,6 @@
 import pandas as pd
 from jinja2 import Template
-from functions import validate_field_names, check_mandatory_fields , check_data_types, fix_trailing_spaces, validate_ip_addresses
+from functions import validate_field_names, check_mandatory_fields , fix_trailing_spaces, validate_ip_addresses
 from yaml_template import yaml_template
 from datetime import datetime
 import os
