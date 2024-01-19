@@ -1,0 +1,76 @@
+heartbeat.monitors:
+- type: icmp
+  id: icmp-ae005_fluke_ae005-r1
+  name: icmp-ae005_fluke_ae005-r1
+  enabled: true
+  schedule: '@every 60s'
+  hosts: 
+  - 130.138.101.244 
+  ipv4: True #user inputs
+  ipv6: False
+  fields_under_root: true
+  fields:
+    geo:
+      city_name: 
+      country_iso_code: AE
+      country_name: United Arab Emirates
+      location:
+        lat: 25.1
+        lon: 55.16
+      name: Philips Dubai
+      location_id: ff61af320f5342000dcfc98b03050e63
+    network:
+      site_id: AE-005
+      site_name: AE-005_Dubai
+      site_uid: 93cee5e1dbb6f3844bdbee71ca961978
+      site_category: Office
+    cmdb:
+      ci_name: ae005_fluke_ae005-r1
+      ci_uid: nan
+      ci_parent_name: AE-005-SITE-UPLINK
+      ci_parent_uid: nan
+      event_category: Application.Bridge.Monitoring
+
+  keep_null: true
+  mode: any
+  timeout: 16s
+  wait: 1s
+  tags: site
+
+- type: icmp
+  id: icmp-ae005_fluke_ae005-r1
+  name: icmp-ae005_fluke_ae005-r1
+  enabled: true
+  schedule: '@every 60s'
+  hosts: 
+  - 130.138.101.244 
+  ipv4: True #user inputs
+  ipv6: False
+  fields_under_root: true
+  fields:
+    geo:
+      city_name: 
+      country_iso_code: AE
+      country_name: United Arab Emirates
+      location:
+        lat: 25.1
+        lon: 55.16
+      name: Philips Dubai
+      location_id: ff61af320f5342000dcfc98b03050e63
+    network:
+      site_id: AE-005
+      site_name: AE-005_Dubai
+      site_uid: 93cee5e1dbb6f3844bdbee71ca961978
+      site_category: Office
+    cmdb:
+      ci_name: ae005_fluke_ae005-r1
+      ci_uid: nan
+      ci_parent_name: AE-005-SITE-UPLINK
+      ci_parent_uid: nan
+      event_category: Application.Bridge.Monitoring
+
+  keep_null: true
+  mode: any
+  timeout: 16s
+  wait: 1s
+  tags: site
