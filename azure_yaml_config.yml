@@ -1,7 +1,7 @@
 trigger:
   branches:
-    exclude:
-    - '*'
+    include:
+    - master
   paths:
     include:
     - 'heartbeat_base_input_template.xlsx'
